@@ -20,4 +20,12 @@ describe('card', function(){
 		deck.fillDeck();
 		assert.equal(deck.getCard(9).name(), "jack of hearts");
 	})
+	it('can return card', function(){
+		var deck = new Deck();
+		deck.fillDeck();
+		deck.shuffleCards();
+		var card = deck.dealCard();
+		deck.returnCardToBack(card);
+		assert.equal(deck.getCard(0), card);
+	})
 })

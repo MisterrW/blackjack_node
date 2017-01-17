@@ -25,20 +25,20 @@ var Deck = function(){
 	}
 
 	this.getCard = function(n){
-		return this.cards[n]
+		return this.cards[n];
 	}
 
 	this.dealCard = function(){
-		return this.cards.pop
+		return this.cards.pop();
 	}
 
 	this.getDeck = function(){
-		return this.cards
+		return this.cards;
 	}
 
 	this.returnCardToBack = function(card){
-		this.cards.unshift(card)
-		return card + " returned!"
+		this.cards.unshift(card);
+		return card + " returned!";
 	}
 }
 
